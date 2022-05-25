@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+ <!-- Popper JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ 
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <!-- google font -->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <div id="container-fluid">
+        <header>
+            <div class="container">
+            
+                <h2>My News</h2>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn" data-toggle="modal" data-target="#modalId" >
+                    <i class="material-icons">search</i>
+                </button>              
+                <!-- end  -->
+            </div>
+        </header>
+        <section class="nd">
+            <div class="container" id="container">
+                
+            </div>
+        </section>
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalIdTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Tìm kiếm trên website</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <div class="modal-body">
+                <input id="searchKey" type="search"  style="width: 75%;"></input>
+                <input id="searchSubmit" type="submit"  onclick="mySearch()" value="Tìm kiếm" data-dismiss="modal"></input><br><br>
+                <b>Từ ngày: </b><input id=from type="date" name="from" min="2010-01-01"><br><br>
+                <b>Đến ngày:</b> <input id=to type="date" name="to" max="2050-01-01"><br><br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
